@@ -1,0 +1,47 @@
+body {
+	background-color: black;
+	text-align: center;
+}
+
+.parent {
+	width: 445.9px;
+	margin: 0 auto;
+	background-color: darkgreen;
+	font-size: 2.5em;
+
+
+	text-align: center;
+}
+
+.child {
+	width: 100px;
+	height: 100px;
+	//background: #bbb;
+	background: #FF7F50;
+	//background: #fffddf;
+	display: inline-block;
+	margin: 1px;
+	padding: 1px;
+
+	line-height: 90px;
+	cursor: pointer;
+	transition: background .4s ease-in-out, opacity .6s linear;
+}
+
+.child:hover {
+	background: lightblue;
+}
+
+
+.buttons input {
+	padding: 3px;
+
+
+}
+
+.result {
+	z-index: 999;
+	width: 400px;
+	height: 400px;
+
+}
