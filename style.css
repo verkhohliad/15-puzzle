@@ -1,16 +1,18 @@
 body {
 	background-color: black;
 	text-align: center;
+
+
 }
 
 .parent {
-	width: 445.9px;
+	width: 430px;
+	height: 430px;
 	margin: 0 auto;
-	background-color: darkgreen;
+	background-color: black;
 	font-size: 2.5em;
 
 
-	text-align: center;
 }
 
 .child {
@@ -19,13 +21,24 @@ body {
 	//background: #bbb;
 	background: #FF7F50;
 	//background: #fffddf;
-	display: inline-block;
-	margin: 1px;
-	padding: 1px;
+	//display: inline-block;
+
+	//margin: 1px;
+	//padding: 1px;
 
 	line-height: 90px;
 	cursor: pointer;
-	transition: background .4s ease-in-out, opacity .6s linear;
+	//transition: background .4s ease-in-out, opacity .6s linear;
+
+	transition: 0.1s left cubic-bezier(0.25, 0.25, 0.25, 0.25), 0.1s top cubic-bezier(0.25, 0.25, 0.25, 0.25);
+	-o-transition: 0.1s left cubic-bezier(0.25, 0.25, 0.25, 0.25), 0.1s top cubic-bezier(0.25, 0.25, 0.25, 0.25);
+	-moz-transition: 0.1s left cubic-bezier(0.25, 0.25, 0.25, 0.25), 0.1s top cubic-bezier(0.25, 0.25, 0.25, 0.25);
+	-webkit-transition: 0.1s left cubic-bezier(0.25, 0.25, 0.25, 0.25), 0.1s top cubic-bezier(0.25, 0.25, 0.25, 0.25);
+
+	//border: 1px solid #d6e9c6;
+	border-radius: 4px;
+
+	position: absolute;
 }
 
 .child:hover {
